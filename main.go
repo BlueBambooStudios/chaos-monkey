@@ -74,6 +74,7 @@ func configure() {
 func main() {
 	if *versionFlag {
 		fmt.Println(version)
+		os.Exit(1)
 	}
 
 	configure()
