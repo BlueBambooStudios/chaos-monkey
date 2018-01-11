@@ -125,7 +125,7 @@ func random(min, max int) int {
 func shouldSkipImage(image string) bool {
 	for _, i := range skipImages {
 		if fuzzy.Match(i, image) {
-			lorgus.Debugf("Skipping %s", image)
+			logrus.Debugf("Skipping %s", image)
 			return true
 		}
 	}
